@@ -73,7 +73,7 @@ plt.figure()
 plt.xlabel('Epoch')
 plt.ylabel('Mean Abs Error [MPG]')
 plt.plot(hist['epoch'], hist['mae'],
-label='Train Error')
+         label='Train Error')
 plt.plot(hist['epoch'], hist['val_mae'],
          label = 'Val Error')
 plt.ylim([0,1])

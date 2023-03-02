@@ -73,8 +73,7 @@ def normalize(data):
 norm_data = normalize(data)
 
 #division de entradas y salidas
-features = norm_data[['pH', 'Temprature', 'Taste', 'Odor', 'Fat ', 'Turbidity', 'Colour']].t
-o_numpy() #entradas
+features = norm_data[['pH', 'Temprature', 'Taste', 'Odor', 'Fat ', 'Turbidity', 'Colour']].to_numpy() #entradas
 labels = norm_data[['High', 'Medium', 'Low']].to_numpy() #salidas
 
 #Step 4 - Creating the Training and Test datasets
